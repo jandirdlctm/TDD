@@ -1,0 +1,14 @@
+SOCCER PLAYER RATING PROGRAM
+
+DETAILS OF PROGRAM:
+    1. Based on stats of a soccer player out of 100, calculate overall rating.
+    2. Attributes: Pace, Shooting, Passing, Dribbling, Defending, and Physical.
+
+Specifications
+1. Set Constructor
+    a. All attributes are of the correct data type.
+2. Setters for every Attribute
+    a. Make sure it is an integer value
+    b. In the range of 0 to 100
+3. Getters for every Attribute
+4. Calculate overall rating based on all Attributes. 
