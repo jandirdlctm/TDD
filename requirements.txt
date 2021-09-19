@@ -7,7 +7,8 @@ DETAILS OF PROGRAM:
 Specifications
 1. Set Constructor
     a. It assigns all 6 attributes
-    b. It rejects less than zero values
+    b. It rejects negative values
+    c. It rejects over 100 values
     c. It rejects string values
     d. It rejects float numbers
     e. It constructs the object.

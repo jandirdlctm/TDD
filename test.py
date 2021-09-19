@@ -20,4 +20,4 @@ def describe_SoccerPlayer():
         
         def it_rejects_over_100_values():
             with pytest.raises(ValueError):
-                SoccerPlayer(102,100,120, 130, 40)
+                SoccerPlayer(102,100,120, 130, 40,20)
