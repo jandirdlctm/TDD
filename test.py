@@ -13,4 +13,7 @@ def describe_SoccerPlayer():
                 assert newPlayer.mDeffending == 35
                 assert newPlayer.mPhysical == 34
 
-            
+        def it_rejects_less_than_zero_values_for_attributes():
+            # newPlayer = SoccerPlayer(-23,67,45,-56,35,34)
+            with pytest.raises(ValueError):
+                SoccerPlayer(-23,67,45,-56,35,34)
