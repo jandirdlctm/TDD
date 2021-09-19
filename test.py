@@ -17,3 +17,7 @@ def describe_SoccerPlayer():
             # newPlayer = SoccerPlayer(-23,67,45,-56,35,34)
             with pytest.raises(ValueError):
                 SoccerPlayer(-23,67,45,-56,35,34)
+        
+        def it_rejects_over_100_values():
+            with pytest.raises(ValueError):
+                SoccerPlayer(102,100,120, 130, 40)
