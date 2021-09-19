@@ -6,7 +6,11 @@ DETAILS OF PROGRAM:
 
 Specifications
 1. Set Constructor
-    a. All attributes are of the correct data type.
+    a. It assigns all 6 attributes
+    b. It rejects less than zero values
+    c. It rejects string values
+    d. It rejects float numbers
+    e. It constructs the object.
 2. Setters for every Attribute
     a. Make sure it is an integer value
     b. In the range of 0 to 100
