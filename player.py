@@ -11,6 +11,8 @@ class SoccerPlayer:
         self.mPhysical = physical
 
     def setPace(self, value):
+        if (isinstance(value, str)):
+            return False
         if (value < 0):
             return False
         self.mPace = value

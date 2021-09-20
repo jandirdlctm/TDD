@@ -62,3 +62,8 @@ def describe_SoccerPlayer():
             assert newPlayer.setDribbling(newDribbling) == False
             assert newPlayer.setDefending(newDefending) == False
             assert newPlayer.setPhysicality(newPhysicality) == False
+
+        def it_rejects_set_string_values():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            newPace = "forty"
+            assert newPlayer.setPace(newPace) == False
