@@ -1,5 +1,7 @@
 import pytest
 from player import SoccerPlayer
+todo = pytest.mark.skip(reason='todo: pending spec')
+
 
 def describe_SoccerPlayer():
     
@@ -21,3 +23,8 @@ def describe_SoccerPlayer():
         def it_rejects_over_100_values():
             with pytest.raises(ValueError):
                 SoccerPlayer(102,100,120, 130, 40,20)
+
+        def it_constructs_the_object():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            assert newPlayer == True
+        
