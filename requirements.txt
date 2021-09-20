@@ -5,7 +5,18 @@ DETAILS OF PROGRAM:
     2. Attributes: Pace, Shooting, Passing, Dribbling, Defending, and Physical.
 
 Specifications
-1. Set Constructor
+1. Set Constructor for Player:
+    a. First Name
+    b. Last Name
+    c. Nationality
+    d. Age
+    -------
+    a. It assigns all 4 attributes
+    b. it has the correct string data type for fn ln Nationality
+    c. It rejects numbers for the first 3 attributes
+    c. It rejects
+
+1. Set Constructor for Soccer Player 
     a. It assigns all 6 attributes
     b. It rejects negative values
     c. It rejects over 100 values 
@@ -19,4 +30,7 @@ Specifications
     a. It rejects float values
     b. In the range of 0 to 100
 3. Getters for every Attribute
-4. Calculate overall rating based on all Attributes. 
+    a. It gets the correct value for all attributes
+4. Calculate overall rating based on all Attributes.
+
+5. Store  

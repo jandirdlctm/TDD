@@ -1,3 +1,11 @@
+
+
+        
+
+
+
+
+
 class SoccerPlayer:
     def __init__(self,pace, shooting, passing, dribbling, defending, physical):
         
@@ -63,4 +71,5 @@ class SoccerPlayer:
 
     def getPhysicality(self):
         return self.mPhysical
-    
+
+
