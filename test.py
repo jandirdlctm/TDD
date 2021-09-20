@@ -36,5 +36,15 @@ def describe_SoccerPlayer():
         def it_sets_for_all_six_attributes():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
             newPace = 45
+            newShooting = 56
+            newPassing = 67
+            newDribbling = 56
+            newDefending = 67
+            newPhysicality = 78
             assert newPlayer.setPace(newPace) == True
+            assert newPlayer.setShooting(newShooting) == True
+            assert newPlayer.setPassing(newPassing) == True
+            assert newPlayer.setDribbling(newDribbling) == True
+            assert newPlayer.setDefending(newDefending) == True
+            assert newPlayer.setPhysicality(newPhysicality) == True
         

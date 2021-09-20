@@ -13,3 +13,23 @@ class SoccerPlayer:
     def setPace(self, value):
         self.mPace = value
         return True
+    
+    def setShooting(self, value):
+        self.mShooting = value
+        return True
+
+    def setPassing(self, value):
+        self.mPassing = value
+        return True 
+
+    def setDribbling(self, value):
+        self.mDribbling = value
+        return True
+    
+    def setDefending(self, value):
+        self.mDeffending = value
+        return True
+
+    def setPhysicality(self, value):
+        self.mPhysical = value
+        return True
