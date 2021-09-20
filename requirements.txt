@@ -8,12 +8,15 @@ Specifications
 1. Set Constructor
     a. It assigns all 6 attributes
     b. It rejects negative values
-    c. It rejects over 100 values
-    c. It rejects string values
-    d. It rejects float numbers
+    c. It rejects over 100 values 
+    c. It rejects string values  @
+    d. It rejects float numbers  @
     e. It constructs the object.
-2. Setters for every Attribute
-    a. Make sure it is an integer value
+2. Setters for every Attributes
+    a. It sets attributes for all six attributes
+    a. It rejects negative values
+    a. It rejects string values
+    a. It rejects float values
     b. In the range of 0 to 100
 3. Getters for every Attribute
 4. Calculate overall rating based on all Attributes. 

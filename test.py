@@ -48,3 +48,7 @@ def describe_SoccerPlayer():
             assert newPlayer.setDefending(newDefending) == True
             assert newPlayer.setPhysicality(newPhysicality) == True
         
+        def it_sets_rejects_negative_values():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            newPace = -45
+            assert newPlayer.setPace(newPace) == False
