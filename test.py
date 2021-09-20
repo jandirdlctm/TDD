@@ -33,6 +33,16 @@ def describe_Player():
         with pytest.raises(ValueError):
             Player("Jandir", -79.0, "Peru", 22)
 
+    def it_rejects_all_incorrect_data_types_for_nationality():
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", 56, 22 )
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", -56, 22 )
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", 86.0, 22 )
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", -56.0, 22 )
+                
 
 
 def describe_SoccerPlayer():
