@@ -12,3 +12,4 @@ class SoccerPlayer:
 
     def setPace(self, value):
         self.mPace = value
+        return True
