@@ -1,7 +1,8 @@
 
 class Player:
     def __init__(self, firstName, lastName, nationality, age):
-        
+        if isinstance(firstName, str) == False:
+            raise ValueError
         self.mFirstName = firstName
         self.mLastName = lastName
         self.mNationality = nationality
