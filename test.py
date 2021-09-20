@@ -51,4 +51,14 @@ def describe_SoccerPlayer():
         def it_sets_rejects_negative_values():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
             newPace = -45
+            newShooting = -56
+            newPassing = -67
+            newDribbling = -56
+            newDefending = -67
+            newPhysicality = -78
             assert newPlayer.setPace(newPace) == False
+            assert newPlayer.setShooting(newShooting) == False
+            assert newPlayer.setPassing(newPassing) == False
+            assert newPlayer.setDribbling(newDribbling) == False
+            assert newPlayer.setDefending(newDefending) == False
+            assert newPlayer.setPhysicality(newPhysicality) == False

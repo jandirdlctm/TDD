@@ -17,21 +17,31 @@ class SoccerPlayer:
         return True
     
     def setShooting(self, value):
+        if (value < 0):
+            return False
         self.mShooting = value
         return True
 
     def setPassing(self, value):
+        if (value < 0):
+            return False
         self.mPassing = value
         return True 
 
     def setDribbling(self, value):
+        if (value < 0):
+            return False
         self.mDribbling = value
         return True
     
     def setDefending(self, value):
+        if (value < 0):
+            return False
         self.mDeffending = value
         return True
 
     def setPhysicality(self, value):
+        if (value < 0):
+            return False
         self.mPhysical = value
         return True
