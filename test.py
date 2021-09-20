@@ -12,6 +12,11 @@ def describe_Player():
         assert newPlayer.mNationality == "Peru"
         assert newPlayer.mAge == 22
 
+    def it_rejects_numbers_for_attributes_except_age():
+        newPlayer = Player(12, 23, 54, 45 )
+        assert isinstance(newPlayer.mFirstName, str) == False
+        
+
 
 def describe_SoccerPlayer():
 
