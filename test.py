@@ -16,7 +16,7 @@ def describe_SoccerPlayer():
                 assert newPlayer.mShooting == 67
                 assert newPlayer.mPassing == 45
                 assert newPlayer.mDribbling == 56
-                assert newPlayer.mDeffending == 35
+                assert newPlayer.mDefending == 35
                 assert newPlayer.mPhysical == 34
 
         def it_rejects_less_than_zero_values_for_attributes():
@@ -103,10 +103,15 @@ def describe_SoccerPlayer():
             assert newPlayer.setDefending(newValue) == False
             assert newPlayer.setPhysicality(newValue) == False
 
-    def describe_set_attributes_of_soccer_Player():
-        
+    def describe_get_attributes_of_soccer_Player():
+
         def it_gets_the_correct_value_for_all_attributes():
             newPlayer = SoccerPlayer(23,67,45,56,35,34) 
-            assert newPlayer.getPace() == 23   
+            assert newPlayer.getPace() == 23
+            assert newPlayer.getShooting() == 67
+            assert newPlayer.getPassing() == 45
+            assert newPlayer.getDribbling() == 56
+            assert newPlayer.getDefending() == 35
+            assert newPlayer.getPhysicality() == 34  
             
 

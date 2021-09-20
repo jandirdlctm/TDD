@@ -7,7 +7,7 @@ class SoccerPlayer:
         self.mShooting = shooting
         self.mPassing = passing
         self.mDribbling = dribbling
-        self.mDeffending = defending
+        self.mDefending = defending
         self.mPhysical = physical
 
     def setPace(self, value):
@@ -37,7 +37,7 @@ class SoccerPlayer:
     def setDefending(self, value):
         if (isinstance(value, float) or isinstance(value, str) or value < 0 or value > 100):
             return False
-        self.mDeffending = value
+        self.mDefending = value
         return True
 
     def setPhysicality(self, value):
@@ -48,3 +48,19 @@ class SoccerPlayer:
 
     def getPace(self):
         return self.mPace
+
+    def getShooting(self):
+        return self.mShooting
+
+    def getPassing(self):
+        return self.mPassing
+
+    def getDribbling(self):
+        return self.mDribbling
+    
+    def getDefending(self):
+        return self.mDefending
+
+    def getPhysicality(self):
+        return self.mPhysical
+    
