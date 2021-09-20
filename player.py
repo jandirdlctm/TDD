@@ -19,6 +19,14 @@ class Player:
             return False
         self.mLastName = value
         return True
+
+    def setNationality(self, value):
+        if isinstance(value, str) == False:
+            return False
+        self.mNationality = value
+        return True
+
+    
         
 
 

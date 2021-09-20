@@ -75,10 +75,10 @@ def describe_Player():
         def it_sets_nationality_of_player_with_correct_value():
             newPlayer = Player("Jandir", "Porta", "Peru", 22 )
             assert newPlayer.setLastName("Carlos") == True
-            assert newPlayer.setLastNationality(32) == False
-            assert newPlayer.setLastNationality(-43) == False
-            assert newPlayer.setLastNationality(56.0) == False
-            assert newPlayer.setLastNationality(-56.0) == False
+            assert newPlayer.setNationality(32) == False
+            assert newPlayer.setNationality(-43) == False
+            assert newPlayer.setNationality(56.0) == False
+            assert newPlayer.setNationality(-56.0) == False
             
 
             
