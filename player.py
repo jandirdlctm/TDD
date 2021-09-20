@@ -1,5 +1,10 @@
 
-
+class Player:
+    def __init__(self, firstName, lastName, nationality, age):
+        self.mFirstName = firstName
+        self.mLastName = lastName
+        self.mNationality = nationality
+        self.mAge = age
         
 
 

@@ -1,13 +1,14 @@
 import pytest
 from player import SoccerPlayer
+from player import Player
 todo = pytest.mark.skip(reason='todo: pending spec')
 
 
 def describe_Player():
     def it_assigns_all_four_attributes():
-        newPlayer = ("Jandir", "Porta", "Peru", 22 )
+        newPlayer = Player("Jandir", "Porta", "Peru", 22 )
         assert newPlayer.mFirstName == "Jandir"
-        assert newPlayer.mLastNmae == "Porta"
+        assert newPlayer.mLastName == "Porta"
         assert newPlayer.mNationality == "Peru"
         assert newPlayer.mAge == 22
 
