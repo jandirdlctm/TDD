@@ -102,5 +102,10 @@ def describe_SoccerPlayer():
             assert newPlayer.setDribbling(newValue) == False
             assert newPlayer.setDefending(newValue) == False
             assert newPlayer.setPhysicality(newValue) == False
+
+    def describe_set_attributes_of_soccer_Player():
+        def it_gets_the_correct_value_for_all_attributes():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34) 
+            assert newPlayer.getPace() == 23   
             
 
