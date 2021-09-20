@@ -7,6 +7,9 @@ class Player:
         self.mLastName = lastName
         self.mNationality = nationality
         self.mAge = age
+
+    def setFirstName(self, value):
+        self.mFirstName = value
         
 
 
