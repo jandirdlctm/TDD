@@ -55,10 +55,14 @@ def describe_Player():
             Player("Jandir", "Porta", "Peru", 0)
 
     def describe_setters_for_player_class():
+        
         def it_sets_first_name_of_player_with_correct_value():
-            newPlayer = newPlayer = Player("Jandir", "Porta", "Peru", 22 )
-            newPlayer.setFirstName("Carlos") == True
-            newPlayer.setFirstName(32) == False
+            newPlayer = Player("Jandir", "Porta", "Peru", 22 )
+            assert newPlayer.setFirstName("Carlos") == True
+            assert newPlayer.setFirstName(32) == False
+            assert newPlayer.setFirstName(-43) == False
+            assert newPlayer.setFirstName(56.0) == False
+            assert newPlayer.setFirstName(-56.0) == False
             
                 
 

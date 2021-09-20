@@ -12,6 +12,7 @@ class Player:
         if isinstance(value, str) == False:
             return False
         self.mFirstName = value
+        return True
         
 
 
