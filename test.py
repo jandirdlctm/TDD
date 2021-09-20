@@ -14,8 +14,9 @@ def describe_Player():
 
     def it_rejects_numbers_for_attributes_except_age():
         newPlayer = Player(12, 23, 54, 45 )
-        assert isinstance(newPlayer.mFirstName, str) == False
-        
+        # assert isinstance(newPlayer.mFirstName, str) == False
+        with pytest.raises(ValueError):
+            Player(34, "Porta", "Peru", 22)
 
 
 def describe_SoccerPlayer():
