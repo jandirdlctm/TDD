@@ -79,6 +79,15 @@ def describe_Player():
             assert newPlayer.setNationality(-43) == False
             assert newPlayer.setNationality(56.0) == False
             assert newPlayer.setNationality(-56.0) == False
+
+        def it_sets_age_of_player_with_correct_value():
+            newPlayer = Player("Jandir", "Porta", "Peru", 22 )
+            assert newPlayer.setAge(45) == True
+            assert newPlayer.setAge("forty") == False
+            assert newPlayer.setAge(-45) == False
+            assert newPlayer.setAge(45.0) == False
+            assert newPlayer.setAge(-56.0) == False
+            
             
 
             
