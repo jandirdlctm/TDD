@@ -26,5 +26,5 @@ def describe_SoccerPlayer():
 
         def it_constructs_the_object():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
-            assert newPlayer == True
+            assert isinstance(newPlayer, SoccerPlayer) 
         

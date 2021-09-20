@@ -9,3 +9,4 @@ class SoccerPlayer:
         self.mDribbling = dribbling
         self.mDeffending = defending
         self.mPhysical = physical
+
