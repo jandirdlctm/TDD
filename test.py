@@ -33,6 +33,8 @@ def describe_SoccerPlayer():
             assert isinstance(newPlayer, SoccerPlayer) 
     
     def describe_set_attributes_of_soccer_Player():
-        newPace = 45
-        assert soccer_player.setPace(45)
+        def it_sets_for_all_six_attributes():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            newPace = 45
+            assert newPlayer.setPace(newPace) == True
         

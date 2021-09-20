@@ -10,4 +10,5 @@ class SoccerPlayer:
         self.mDeffending = defending
         self.mPhysical = physical
 
-    
+    def setPace(self, value):
+        self.mPace = value
