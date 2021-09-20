@@ -9,6 +9,8 @@ class Player:
         self.mAge = age
 
     def setFirstName(self, value):
+        if isinstance(value, str) == False:
+            return False
         self.mFirstName = value
         
 

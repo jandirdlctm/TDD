@@ -58,6 +58,7 @@ def describe_Player():
         def it_sets_first_name_of_player_with_correct_value():
             newPlayer = newPlayer = Player("Jandir", "Porta", "Peru", 22 )
             newPlayer.setFirstName("Carlos") == True
+            newPlayer.setFirstName(32) == False
             
                 
 
