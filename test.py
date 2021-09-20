@@ -81,4 +81,14 @@ def describe_SoccerPlayer():
         def it_rejects_set_floating_values():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
             newPace = 80.0
+            newShooting = 80.0
+            newPassing = 80.0
+            newDribbling = 80.0
+            newDefending = 80.0
+            newPhysicality = 80.0
             assert newPlayer.setPace(newPace) == False
+            assert newPlayer.setShooting(newShooting) == False
+            assert newPlayer.setPassing(newPassing) == False
+            assert newPlayer.setDribbling(newDribbling) == False
+            assert newPlayer.setDefending(newDefending) == False
+            assert newPlayer.setPhysicality(newPhysicality) == False
