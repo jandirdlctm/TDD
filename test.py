@@ -12,9 +12,19 @@ def describe_Player():
         assert newPlayer.mNationality == "Peru"
         assert newPlayer.mAge == 22
 
-    def it_rejects_numbers_for_attributes_except_age():
+    def it_rejects_all_data_types_for_first_name():
         with pytest.raises(ValueError):
             Player(34, "Porta", "Peru", 22)
+        with pytest.raises(ValueError):
+            Player(-33, "Porta", "Peru", 22)
+        with pytest.raises(ValueError):
+            Player(33.0, "Porta", "Peru", 22)
+        with pytest.raises(ValueError):
+            Player(-33.0, "Porta", "Peru", 22)    
+        
+
+    # def it_rejects
+
 
 
 def describe_SoccerPlayer():
