@@ -87,6 +87,7 @@ def describe_Player():
             assert newPlayer.setAge(-45) == False
             assert newPlayer.setAge(45.0) == False
             assert newPlayer.setAge(-56.0) == False
+            assert newPlayer.setAge(0) == False
             
             
             
