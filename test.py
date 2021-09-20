@@ -5,6 +5,7 @@ todo = pytest.mark.skip(reason='todo: pending spec')
 
 
 def describe_Player():
+    # def describe_Player_Constructor():
     def it_assigns_all_four_attributes():
         newPlayer = Player("Jandir", "Porta", "Peru", 22 )
         assert newPlayer.mFirstName == "Jandir"
@@ -42,6 +43,11 @@ def describe_Player():
             Player("Jandir", "Porta", 86.0, 22 )
         with pytest.raises(ValueError):
             Player("Jandir", "Porta", -56.0, 22 )
+
+    def it_rejects_all_incorrect_data_types_for_age():
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", "Peru", "twenty")
+            
                 
 
 
