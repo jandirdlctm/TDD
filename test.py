@@ -53,6 +53,11 @@ def describe_Player():
             Player("Jandir", "Porta", "Peru", 25.0)
         with pytest.raises(ValueError):
             Player("Jandir", "Porta", "Peru", 0)
+
+    def describe_setters_for_player_class():
+        def it_sets_first_name_of_player_with_correct_values():
+            newPlayer = newPlayer = Player("Jandir", "Porta", "Peru", 22 )
+            newPlayer.setFirstName("Carlos") == True
             
                 
 
