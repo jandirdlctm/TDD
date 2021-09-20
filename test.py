@@ -97,5 +97,10 @@ def describe_SoccerPlayer():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
             newValue = 110
             assert newPlayer.setPace(newValue) == False
+            assert newPlayer.setShooting(newValue) == False
+            assert newPlayer.setPassing(newValue) == False
+            assert newPlayer.setDribbling(newValue) == False
+            assert newPlayer.setDefending(newValue) == False
+            assert newPlayer.setPhysicality(newValue) == False
             
 
