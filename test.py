@@ -4,6 +4,10 @@ todo = pytest.mark.skip(reason='todo: pending spec')
 
 
 def describe_SoccerPlayer():
+
+    @pytest.fixture
+    def soccer_player():
+        return SoccerPlayer(23,67,45,56,35,34)
     
     def describe_initializer_of_soccer_player():
         def it_assigns_all_six_attributes():
@@ -27,4 +31,8 @@ def describe_SoccerPlayer():
         def it_constructs_the_object():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
             assert isinstance(newPlayer, SoccerPlayer) 
+    
+    def describe_set_attributes_of_soccer_Player():
+        newPace = 45
+        assert soccer_player.setPace(45)
         
