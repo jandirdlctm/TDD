@@ -26,6 +26,12 @@ class Player:
         self.mNationality = value
         return True
 
+    def setAge(self, value):
+        if isinstance(value, int) == False or value <= 0:
+            return False
+        self.mAge = value
+        return True
+
     
         
 
