@@ -13,6 +13,12 @@ class Player:
             return False
         self.mFirstName = value
         return True
+
+    def setLastName(self, value):
+        if isinstance(value, str) == False:
+            return False
+        self.mLastName = value
+        return True
         
 
 
