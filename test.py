@@ -92,3 +92,10 @@ def describe_SoccerPlayer():
             assert newPlayer.setDribbling(newDribbling) == False
             assert newPlayer.setDefending(newDefending) == False
             assert newPlayer.setPhysicality(newPhysicality) == False
+
+        def it_rejects_set_over_limit():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            newValue = 110
+            assert newPlayer.setPace(newValue) == False
+            
+
