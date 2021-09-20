@@ -45,3 +45,6 @@ class SoccerPlayer:
             return False
         self.mPhysical = value
         return True
+
+    def getPace(self):
+        return self.mPace
