@@ -47,6 +47,12 @@ def describe_Player():
     def it_rejects_all_incorrect_data_types_for_age():
         with pytest.raises(ValueError):
             Player("Jandir", "Porta", "Peru", "twenty")
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", "Peru", -23)
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", "Peru", 25.0)
+        with pytest.raises(ValueError):
+            Player("Jandir", "Porta", "Peru", 0)
             
                 
 
