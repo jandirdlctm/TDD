@@ -51,6 +51,14 @@ class Player:
         self.mID = id
         return True
 
+    def addToDict(self):
+        self.generateID
+        id = self.mID
+        newDict = {
+            id : self
+        }
+        return True
+
 
 
 class SoccerPlayer(Player):
