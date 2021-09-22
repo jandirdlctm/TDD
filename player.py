@@ -52,7 +52,6 @@ class Player:
         return True
 
     def addToDict(self):
-        self.generateID
         id = self.mID
         newDict = {
             id : self
