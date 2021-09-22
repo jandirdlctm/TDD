@@ -271,4 +271,11 @@ def describe_SoccerPlayer():
             assert isinstance(newRating, int)
 
 
-        
+        def it_gives_feedback_based_on_rating():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            # 0 - 24 = poor
+            # 25 - 49 = alright
+            # 50 - 75 = good
+            # 75 - 100 = legendary
+            rating = newPlayer.getOverallRating()
+            assert newPlayer.getFeedback() == "alright"

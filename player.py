@@ -132,4 +132,6 @@ class SoccerPlayer(Player):
         rating = (self.mPace + self.mShooting + self.mPassing + self.mDribbling + self.mDefending + self.mPhysical) / 6
         int(math.floor(rating))
         return rating
+
+    
     
