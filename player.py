@@ -32,6 +32,9 @@ class Player:
         self.mAge = value
         return True
 
+    def getFirstName(self):
+        return self.mFirstName
+
     
         
 
