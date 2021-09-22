@@ -15,6 +15,11 @@ Specifications
     b. it has the correct string data type for fn ln Nationality
     c. It rejects numbers for the first 3 attributes
     c. It rejects
+2. Setters for Players
+3. Getters for Player
+4. Generate random ID
+
+3. Inheritance
 
 1. Set Constructor for Soccer Player 
     a. It assigns all 6 attributes
@@ -31,6 +36,6 @@ Specifications
     b. In the range of 0 to 100
 3. Getters for every Attribute
     a. It gets the correct value for all attributes
-4. Calculate overall rating based on all Attributes.
-
-5. Store  
+4. Calculate overall rating based on all Attributes
+5. Store in array with name as key and overall rating value
+6. Sort array from highest rated to lowest rated
