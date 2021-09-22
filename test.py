@@ -108,6 +108,12 @@ def describe_Player():
             if (newPlayer.generateID()):
                 listID = [int(x) for x in str(newPlayer.mID)]
                 assert len(listID) == 4
+    
+    def describe_store_in_dictionary():
+        def it_stores_as_dictionaries():
+            newPlayer = Player("Jandir", "Porta", "Peru", 22 )
+            assert newPlayer.addToDict() == True
+
             
             
             

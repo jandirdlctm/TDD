@@ -49,7 +49,8 @@ class Player:
     def generateID(self):
         id = random.randint(1000,9999)
         self.mID = id
-        return True 
+        return True
+
 
 
 class SoccerPlayer(Player):
