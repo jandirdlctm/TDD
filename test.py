@@ -273,9 +273,15 @@ def describe_SoccerPlayer():
 
         def it_gives_feedback_based_on_rating():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            newPlayer2 = SoccerPlayer(100,100,100,100,100,100)
+            newPlayer3 = SoccerPlayer(0,0,0,0,0,0)
+            newPlayer4 = SoccerPlayer(50,55,50,50,50,50)
             # 0 - 24 = poor
             # 25 - 49 = alright
             # 50 - 75 = good
             # 75 - 100 = legendary
             rating = newPlayer.getOverallRating()
+            assert newPlayer3.getFeedback() ==  "poor"
             assert newPlayer.getFeedback() == "alright"
+            assert newPlayer4.getFeedback() == "good"
+            assert newPlayer2.getFeedback() == "legendary"

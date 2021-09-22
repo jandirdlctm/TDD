@@ -133,5 +133,14 @@ class SoccerPlayer(Player):
         int(math.floor(rating))
         return rating
 
-    
+    def getFeedback(self):
+        rating = self.getOverallRating()
+        if (rating <= 24):
+            return "poor"
+        elif (rating >= 25 and rating < 50):
+            return "alright"
+        elif (rating >= 50 and rating <= 76):
+            return "good"
+        else:
+            return "legendary"
     
