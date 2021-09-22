@@ -102,6 +102,9 @@ def describe_Player():
         def it_gives_a_random_id_for_a_player():
             newPlayer = Player("Jandir", "Porta", "Peru", 22 )
             assert newPlayer.generateID() == True
+
+        
+            
             
             
             

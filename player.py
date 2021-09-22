@@ -45,7 +45,9 @@ class Player:
     def getAge(self):
         return self.mAge
 
-    # 
+    def generateID(self):
+        number = random.randint(1000,9999)
+        return True
 
 
     
