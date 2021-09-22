@@ -34,6 +34,15 @@ class Player:
 
     def getFirstName(self):
         return self.mFirstName
+    
+    def getLastName(self):
+        return self.mLastName
+
+    def getNationality(self):
+        return self.mNationality
+
+    def getAge(self):
+        return self.mAge
 
     
         

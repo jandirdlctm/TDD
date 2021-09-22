@@ -94,6 +94,9 @@ def describe_Player():
         def it_gets_all_player_attributes():
             newPlayer = Player("Jandir", "Porta", "Peru", 22 )
             assert newPlayer.getFirstName() == "Jandir"
+            assert newPlayer.getLastName() == "Porta"
+            assert newPlayer.getNationality() == "Peru"
+            assert newPlayer.getAge() == 22
             
             
             
