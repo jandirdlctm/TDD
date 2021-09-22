@@ -103,7 +103,13 @@ def describe_Player():
             newPlayer = Player("Jandir", "Porta", "Peru", 22 )
             assert newPlayer.generateID() == True
 
-       
+        def it_generates_a_four_digit_number():
+            newPlayer = Player("Jandir", "Porta", "Peru", 22 )
+            if (newPlayer.generateID()):
+                listID = [int(x) for x in str(newPlayer.mID)]
+                assert len(listID) == 4
+            
+
             
             
             
