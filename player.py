@@ -8,6 +8,7 @@ class Player:
         self.mLastName = lastName
         self.mNationality = nationality
         self.mAge = age
+        self.mID = 0
 
     def setFirstName(self, value):
         if isinstance(value, str) == False:
@@ -46,8 +47,9 @@ class Player:
         return self.mAge
 
     def generateID(self):
-        number = random.randint(1000,9999)
-        return True
+        id = random.randint(1000,9999)
+        self.mID = id
+        return True 
 
 
     
