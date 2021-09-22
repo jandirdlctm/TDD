@@ -88,6 +88,12 @@ def describe_Player():
             assert newPlayer.setAge(45.0) == False
             assert newPlayer.setAge(-56.0) == False
             assert newPlayer.setAge(0) == False
+
+    def describe_getters_for_all_attributes():
+        
+        def it_gets_all_player_attributes():
+            newPlayer = Player("Jandir", "Porta", "Peru", 22 )
+            assert newPlayer.getFirstName() == "Jandir"
             
             
             
