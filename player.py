@@ -1,3 +1,4 @@
+import random
 
 class Player:
     def __init__(self, firstName, lastName, nationality, age):
@@ -43,6 +44,9 @@ class Player:
 
     def getAge(self):
         return self.mAge
+
+    # 
+
 
     
         
