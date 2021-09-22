@@ -113,9 +113,13 @@ def describe_Player():
         def it_stores_as_dictionaries():
             newPlayer = Player("Jandir", "Porta", "Peru", 22 )
             newPlayer.generateID
-            assert newPlayer.addToDict() == True
+            response = False
+            if newPlayer.addToDict():
+                response = True
+            assert  response == True
 
-            
+        
+        
             
             
         

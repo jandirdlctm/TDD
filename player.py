@@ -56,7 +56,7 @@ class Player:
         newDict = {
             id : self
         }
-        return True
+        return newDict
 
 
 
