@@ -109,25 +109,19 @@ def describe_Player():
                 listID = [int(x) for x in str(newPlayer.mID)]
                 assert len(listID) == 4
             
-
             
-            
-            
-            
-            
-
             
         
-
-            
-                
-
-
 def describe_SoccerPlayer():
 
     @pytest.fixture
     def soccer_player():
         return SoccerPlayer(23,67,45,56,35,34)
+
+    def describe_inheritance_from_Player_Class():
+        def it_inherits_from_Player():
+            newSoccerPlayer = SoccerPlayer(23,67,45,56,35,34)
+            assert isinstance(newSoccerPlayer, Player) == True
     
     def describe_initializer_of_soccer_player():
         def it_assigns_all_six_attributes():
