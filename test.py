@@ -1,4 +1,5 @@
 import pytest
+import math
 from player import SoccerPlayer
 from player import Player
 todo = pytest.mark.skip(reason='todo: pending spec')
@@ -262,3 +263,9 @@ def describe_SoccerPlayer():
             newPlayer = SoccerPlayer(23,67,45,56,35,34)
             expectedRating = (newPlayer.getPace() + newPlayer.getShooting() + newPlayer.getPassing() + newPlayer.getDribbling() + newPlayer.getDefending() + newPlayer.getPhysicality()) / 6
             assert newPlayer.getOverallRating() == expectedRating
+
+        def it_calculates_overall_rating_as_integer():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            rating = newPlayer.getOverallRating()
+            newRating = int(math.floor(rating))
+            assert isinstance(newRating, int)
