@@ -127,4 +127,7 @@ class SoccerPlayer(Player):
     def getPhysicality(self):
         return self.mPhysical
 
+    def getOverallRating(self):
+        rating = (self.mPace + self.mShooting + self.mPassing + self.mDribbling + self.mDefending + self.mPhysical) / 6
+        return rating
     
