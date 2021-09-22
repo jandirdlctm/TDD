@@ -118,6 +118,15 @@ def describe_Player():
                 response = True
             assert  response == True
 
+        def it_sets_the_id_as_key():
+            newPlayer = Player("Jandir", "Porta", "Peru", 22 )
+            newPlayer.generateID
+            playerDict = newPlayer.addToDict()
+            id = newPlayer.mID
+            response = False
+            if playerDict[id]:
+                response = True
+            assert response == True
         
         
             
