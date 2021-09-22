@@ -285,3 +285,8 @@ def describe_SoccerPlayer():
             assert newPlayer.getFeedback() == "alright"
             assert newPlayer4.getFeedback() == "good"
             assert newPlayer2.getFeedback() == "legendary"
+
+        def it_gives_feedback_in_a_string():
+           newPlayer = SoccerPlayer(23,67,45,56,35,34)
+           feeback = newPlayer.getFeedback()
+           assert isinstance(feeback, str) == True 
