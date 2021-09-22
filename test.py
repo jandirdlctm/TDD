@@ -257,3 +257,8 @@ def describe_SoccerPlayer():
             assert newPlayer.getPhysicality() == 34  
             
 
+    def describe_overall_rating():
+        def it_calculates_overall_rating():
+            newPlayer = SoccerPlayer(23,67,45,56,35,34)
+            expectedRating = (newPlayer.getPace() + newPlayer.getShooting() + newPlayer.getPassing() + newPlayer.getDribbling() + newPlayer.getDefending() + newPlayer.getPhysicality()) / 6
+            assert newPlayer.getOverallRating() == expectedRating
